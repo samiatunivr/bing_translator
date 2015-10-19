@@ -1,5 +1,5 @@
 
-
+# make sure you install bing translator api before using this script
 Client_secret = 'your secrete id'
 CUSTOM_ID = 'your client id'
 
@@ -17,7 +17,7 @@ print'translate... \n '
 
 for k in range(0, len(words)):
     word = words[k]
-    grams = open(file_path1 + word + '.txt') # translate from a text file 
+    grams = open(file_path1 + word + '.txt') # translate from a text file/ comment if you just have a single word
     gram2 = grams.readlines()
     grm = [w.replace('\n','') for w in gram2]
 
